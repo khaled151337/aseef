@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.case{
+    height: 200px;
+    width: 500px;
+    margin-left: 33%; margin-top: 10%;
+}
+
+.case .clock{
+    height: 110px;
+    width: 425px;
+    background-color: black;
+    display: flex; justify-content: space-evenly; align-items: center;
+    border-radius: 20px;
+    margin-top: 30px; margin-left: 40px;   
+}
+.case .clock .counter{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(111, 255, 0);   
+    border-radius: 15px;
+    line-height: 100px;
+    text-align: center;
+
+    font-size: 60px;  font-family: "Poetsen One", sans-serif; font-weight: 600;
+
+    text-transform: uppercase;
+}
+/* .case .clock .counter:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.case .clock .counter:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+} */
+
+.case .watch_stant{
+    height: 50px;
+    width: 20px;
+    background-color: black;
+    margin-left: 48.5%;  
+}
+
+.stand_foot{
+    width: 180px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+  
+    margin-top: -30px;
+    margin-left: 160px;
+
+}
+
+/* .btn{
+    height: 7px; width: 15px; background-color: black;
+} */
+
+body{
+    height: 1500px;
+}
+
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(215, 211, 202);
+    z-index: 999;
+    /* transition: all 0.5s; */
+}
+
+.active{
+    margin-top: -150px;
+    position: fixed; 
+}
+/* @keyframes name{
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 70px;  position: fixed;
+    }
+} */
+
+.container{
+    width: 900px;
+    height: 100%;  
+    margin: auto;
+}
+
+.container span i{
+     font-size: 30px; line-height: 70px; cursor: pointer;
+}
+
+#after{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(215, 211, 202); 
+    margin-top: -70px; 
+    position: fixed;       
+    z-index: 999;
+    overflow: hidden;
+}
+.anymation_after{
+    animation: down 0.2s linear;
+}
+@keyframes down{
+    0%{
+        height: 0px;
+     
+      
+    }
+    100%{
+        height: 70px;
+        
+    }
+}
+
+
+#after #container {
+    width: 900px;
+    height: 100%;  
+    margin: auto;
+}
+#after #container i{
+    font-size: 30px; 
+    line-height: 70px; 
+    cursor: pointer;
+}
